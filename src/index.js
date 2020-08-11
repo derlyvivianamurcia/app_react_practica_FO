@@ -1,16 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Insignia from './components/Insignia.jsx';
+import 'bootstrap/dist/css/bootstrap.css'
+import InsigniaNueva from './pages/InsigniaNueva.jsx'
 
-const container = document.getElementById('root');
 
 ReactDOM.render(
-  <Insignia 
-  firstName='Derly '
-   lastName='Murcia' 
-   twitter='derlyvmurcia'/>,
-  container
+  <>
+  <InsigniaNueva/>
+  </>,
+  document.getElementById('root')
 );
-
 
 

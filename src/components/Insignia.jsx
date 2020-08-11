@@ -21,7 +21,7 @@ class Insignia extends React.Component{
                     </div>
                 </div>
                 <div className='Insignia__footer'>
-                    Derechos reservados
+                Politécnico Colombiano Jaime Isaza Cadavid © 2020
                 </div>
             </div>
         )
