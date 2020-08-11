@@ -17,9 +17,7 @@ class InsigniaFormulario extends React.Component{
         console.log(this.state);
     }
     //EVENTO INPUT
-    handleChange = (e) =>{
-/*         this.setState({[e.target.name]: e.target.value})
- */    }
+ 
     //EVENTO BOTÓN
     handleClick = e =>{
         console.log('Botón presionado')
@@ -34,41 +32,41 @@ class InsigniaFormulario extends React.Component{
                         <label>
                             Nombre
                         </label>
-                        <input onChange={this.handleChange}
+                        <input onChange={this.props.onChange}
                          className='form-control' 
                          name='firstName' 
                          type='text'
-                        value={this.state.firstName} />
+                        value={this.props.formValues.firstName} />
                     </div>
 
                     <div className='form-group'>
                         <label>
                             Apelllido
                         </label>
-                        <input onChange={this.handleChange} className='form-control' name='lastName' type='text'
-                          value={this.state.lastName}  />
+                        <input onChange={this.props.onChange} className='form-control' name='lastName' type='text'
+                          value={this.props.formValues.lastName}  />
                     </div>
 
                     <div className='form-group'>
                         <label>
                             Email
                         </label>
-                        <input onChange={this.handleChange} className='form-control' name='email' type='email'   value={this.state.email} />
+                        <input onChange={this.props.onChange} className='form-control' name='email' type='email'   value={this.props.formValues.email} />
                     </div>
 
                     <div className='form-group'>
                         <label>
                             Ocupación
                         </label>
-                        <input onChange={this.handleChange} className='form-control' name='ocupacion' type='text'
-                          value={this.state.ocupacion}  />
+                        <input onChange={this.props.onChange} className='form-control' name='ocupacion' type='text'
+                          value={this.props.formValues.ocupacion}  />
                     </div>
 
                     <div className='form-group'>
                         <label>
                             Twitter
                         </label>
-                        <input onChange={this.handleChange} className='form-control' name='twitter' type='text'   value={this.state.twitter} />
+                        <input onChange={this.props.onChange} className='form-control' name='twitter' type='text'   value={this.props.formValues.twitter} />
                     </div>
 
                     <button onClick={this.handleClick} className='btn btn-success' >
