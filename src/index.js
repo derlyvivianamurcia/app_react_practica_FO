@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css'
-import InsigniaNueva from './pages/InsigniaNueva.jsx'
+import Aplicacion from './components/Aplicacion'
 
 
 ReactDOM.render(
   <>
-  <InsigniaNueva/>
+  <Aplicacion/>
   </>,
   document.getElementById('root')
 );

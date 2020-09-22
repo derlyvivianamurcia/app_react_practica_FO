@@ -13,9 +13,7 @@ class InsigniaNueva extends React.Component {
              email:'',
              ocupacion:'',
              twitter:' ' 
-              }};
-
-
+             }};
 
 
     handleChange = e =>{
@@ -28,8 +26,8 @@ class InsigniaNueva extends React.Component {
     }
     render() {
         return (
-            <div>
-                <Navbar />
+            <React.Fragment>
+  
                 <div className='BadgeNew__hero'>
                     <img className='img-fluid' src={LogoHeader} alt='Logo' />
                 </div>
@@ -55,7 +53,7 @@ class InsigniaNueva extends React.Component {
 
 
 
-            </div>
+                </React.Fragment>
         )
     }
 }
